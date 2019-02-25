@@ -1,0 +1,24 @@
+% Letztes Update: 24-Feb-2019
+\documentclass[12pt, a4paper, parskip=half, fleqn]{scrartcl} % parskip=half // Absatzabstand
+% meine Einstellungen
+\include{tex/praeambel-artikel-light}		 
+% Literatur
+\bibliography{tex/literatur}       % Bibliotheksdatei
+\bibliography{tex/literatur-laufen}% Bibliotheksdatei
+%
+\begin{document}
+  \selectlanguage{ngerman}
+  
+  %\include{inhalt}                     % Inhalt  
+  % ----------------------------------- 
+  \input{tex/neu}
+  %
+  %\input{Projekt-files}
+	% -----------------------------------
+
+  %\include{content/LatexSpickzettel}   % LatexSpickzettel.tex
+	%\include{content/MarkdownSpickzettel}% MarkdownSpickzettel.tex
+  %
+  % Bibliographie
+  \printbibliography[heading=bibintoc] 
+\end{document}

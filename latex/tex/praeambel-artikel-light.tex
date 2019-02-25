@@ -1,0 +1,264 @@
+% Latex
+% Letztes Update: 24-Feb-2019
+\usepackage[T1]{fontenc}               % Schriftarten 
+\usepackage[english,ngerman]{babel}    % dt. Silbentrennung 
+\usepackage[utf8]{inputenc}            % Kodierung 
+% Schrift
+\usepackage[osf,sc]{mathpazo}
+\usepackage[scale=.9, semibold]{sourcecodepro}
+\usepackage[osf]{sourcesanspro}
+%\usepackage{lmodern}                  
+%
+\usepackage[table,x11names,dvipsnames,usenames]{xcolor}% Farben
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{amssymb}%Pfeile
+\usepackage{mathtools}% lädt amsmath und korrigiert zwei Fehler
+\usepackage{siunitx} % \num{12345,678999} 12 345.678 999
+\usepackage{color}
+\usepackage{multicol}
+\usepackage{framed}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{verbatim}
+\usepackage{tcolorbox}
+\usepackage{lipsum}
+\usepackage{blindtext}
+\usepackage{tocloft}
+
+
+% bibliography
+\usepackage[babel,german=guillemets]{csquotes} %deutsches Anführungszeichen
+\usepackage[style=ieee, bibencoding=utf8, backend=biber]{biblatex} % biblatex mit biber laden
+\ExecuteBibliographyOptions{
+	backref=false,
+	backrefstyle=three+,
+	url=true,
+	urldate=comp,
+	abbreviate=false,
+	maxnames=20
+}
+
+\usepackage{enumitem}% Definition neuer Listentypen
+\usepackage{tabularx}% Tabellen mit flexibler Spaltenbreite
+\usepackage{booktabs}% schönere Tabellenlinien
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage{listingsutf8}
+\usepackage{url}% Trennung an vernünftigen Stellen
+\usepackage{pdfpages}% PDF-Dokumente einbinden
+\usepackage{qrcode}% Anwendung: \qrcode[hyperlink,height=5cm]{https://bw1.eu/}
+
+% Abb., Tab., Prog.
+\renewcaptionname{ngerman}{\figurename}{Abb.}
+\renewcaptionname{ngerman}{\tablename}{Tab.}
+\renewcommand{\lstlistingname}{Prog.}
+
+
+%% Farben vordefiniert:
+% white lightgray gray darkgray black
+% yellow red green blue
+% cyan magenta teal
+% brown lime olive orange
+% pink purple violet
+
+%% eig. Farbe
+\definecolor{hellesbrombeer}{rgb}{0.8,0.4,0.8}
+\definecolor{meinred}{rgb}{0.9, 0.13, 0.13}
+\definecolor{meinblue}{rgb}{0,0.38671875,0.64453125}
+\definecolor{meingreen}{rgb}{0.0, 0.34, 0.25}
+\definecolor{meinorange}{rgb}{1.0, 0.55, 0.0}
+\definecolor{meingrey}{rgb}{0.953125,0.96484375,0.98046875}
+\definecolor{meinpink}{rgb}{255, 0, 102}
+\definecolor{darkblue}{rgb}{0.03, 0.27, 0.49}
+\definecolor{darkred}{rgb}{153, 9, 9}
+% \colorbox{red!10!white} % Tabelle 10% rot, Rest weiß}
+
+%% Kapitelüberschriften farbig
+\usepackage{sectsty}
+\chapterfont{\color{red!75!black}}
+\sectionfont{\color{red!75!black}}
+\subsectionfont{\color{red!75!black}}
+\subsubsectionfont{\color{red!75!black}}
+
+
+%% Quellcode
+\usepackage{listingsutf8}
+\lstset{%
+	basicstyle=\small\ttfamily, %Schriftformat  \texttt{Maschinenschrift},
+	showstringspaces=false,
+	%numbers=left,
+	numberstyle=\tiny,
+	numbersep=5pt,
+  %stepnumber=2,      %Jede zweite Zeile nummerieren
+	%backgroundcolor=\color{meingrey},	%helles grau
+	showspaces=false,        % show spaces adding particular underscores
+	showstringspaces=false,  % underline spaces within strings
+	showtabs=false,          % show tabs within strings adding particular underscores
+	%frame=false,            % adds a frame around the code
+	tabsize=2,               % Tabulator
+	breaklines=true,         % Zeilen umbrechen wenn notwendig.
+	breakautoindent=true,    % Nach dem Zeilenumbruch Zeile einrücken.
+	numberblanklines=false,
+	postbreak=\space,        % Bei Leerzeichen umbrechen.
+	resetmargins=true,
+	gobble=2,
+  captionpos=b,            % sets the caption-position to bottom or top
+	title=,                  % show the filename of files included with \lstinputlisting;
+	prebreak=\mbox{ $\curvearrowright$},%code umbruch
+	linewidth=\columnwidth,
+	keywordstyle=\color{red!75!black},% Schlüsselwörter
+	stringstyle=\color{meinorange},   % Variablen
+	commentstyle=\color{meingreen},   % Kommentare
+	emphstyle=\color{darkblue},       % Variablen
+	%morekeywords={subsection},
+	%language=[LaTeX]TeX % Sprache
+}
+\lstset{literate=%
+	{Ö}{{\"O}}1
+	{Ä}{{\"A}}1
+	{Ü}{{\"U}}1
+	{ß}{\ss}2
+	{ü}{{\"u}}1
+	{ä}{{\"a}}1
+	{ö}{{\"o}}1
+	{»}{{\frqq}}4
+	{«}{{\flqq}}4
+}
+
+
+
+
+\usepackage[breaklinks=true]{hyperref}	% 2. Hyperlinks und Lesezeichen in PDF
+\usepackage[ngerman]{cleveref}          % 3. Automatische Querverweise
+
+%% PDF-Meta-Informationen und Darstellung von Links im Dokument
+\hypersetup{
+	draft =false,
+	colorlinks,
+	linkcolor={red!75!black}, % Inhaltsverzeichnis farbe
+	citecolor={red!75!black},
+	filecolor={red!75!black},
+  pagecolor={red!75!black},
+	urlcolor={darkblue},
+	bookmarksopen=true, bookmarksopenlevel=1,
+	bookmarks=true,           % show bookmarks bar?
+  unicode=true,             % non-Latin characters in Acrobats bookmarks
+  pdftoolbar=true,          % show Acrobats toolbar?
+  pdfmenubar=true,          % show Acrobats 
+  pdffitwindow=false,       % window fit to page when opened
+  pdfstartview={FitH},      % fits the width of the page to the window
+  pdftitle=Thema,           % title
+  pdfauthor=Jan Unger,      % author
+  pdfsubject=Mitschrift,    % subject of the document
+  pdfcreator=LaTeX,         % creator of the document
+  pdfproducer=Koma,         % producer of the document
+  pdfkeywords=Schlagwoerter,% list of keywords
+  pdfnewwindow=true,        % links in new windowrgb(210, 35, 42)
+	hyperfootnotes=true,      % Links auf Fußnoten
+	hyperindex=true,          % Indexeinträge verweisen auf Text
+	linkbordercolor={0 1 1},  % Rahmenfarbe interne Links
+	menubordercolor={0 1 1},  % Rahmenfarbe Literaturlinks
+	urlbordercolor={1 0 0}    % Rahmenfarbe externe Links
+}
+
+%% Mathe linksbündig: \documentclass-option: fleqn
+\setlength{\mathindent}{5mm} % Mathe-Einrücktiefe
+
+\onehalfspacing             % Zeilenabstand 1,5
+
+\setlength{\parindent}{0cm} % Einrücken der ersten Zeile, Absatz
+
+\usepackage[margin=2.5cm]{geometry}
+
+%% Kapitelnummer und Kapitelname - Abstand
+%\renewcommand*\chapterformat{\thechapter.~\vspace{5mm}}
+
+
+% ++++++++++++++++++++++++++++++++++
+%% Textauszeichnung
+% \emph{kursiv}
+% \textrm{Antiqua}, \textsf{Grotesk}, \texttt{Maschinenschrift},
+% \textmd{normal}, \textbf{breiter}, \textup{aufrecht}, \textsl{geneigt},
+% \textit{kursiv}, \textsc{Kapitaelchen}
+
+%% Schriftgroesse
+% \tiny{winzig}, \scriptsize{sehr klein}, \footnotesize{klein},
+% \small{klein}, \normalsize{normal}, \large{gross}, \Large{groesser},
+% \LARGE{ganz gross}, \huge{riesig}, \Huge{gigantisch}
+
+%% eigene Befehle definieren
+% Textauszeichnung: \wort{Beispiel}, \fremdwort{prezioes}
+\newcommand{\wort}[1]{\emph{#1}}
+\newcommand{\fremdwort}[1]{\textsf{#1}}
+
+%% Textabstand:  Verwendung: \abstand{}
+\newcommand{\abstand}[1]{\vspace{5mm}{#1}}
+%% quad, qquad, hspace{20mm}, vspace{20mm}
+%
+% Wichtig (Optionale Parameter)
+%% Wort Kursiv u. in Farbe
+\newcommand{\wichtig}[2][red]{\textcolor{#1}{\emph{#2}}}
+
+% Eigene Umgebung
+% Verwendung: \begin{hinweis}Ein Text.\end{hinweis}
+\newenvironment{hinweis}[1][Hinweis]{%
+  \begin{quote}
+  \color{meinblue}\rule{0.87\textwidth}{1pt}\\%
+	\color{black}
+  \textbf{#1:}\\ %
+}{%
+	\vspace{1mm}
+  \\\color{meinblue}\rule[5ex]{0.87\textwidth}{1pt}%
+  \end{quote}
+}
+
+% farbige Infobox
+% Anwendung:
+% \myInfoBox{Text}
+\newcommand\myInfoBox[1]{%
+  \begin{quote}
+	\fcolorbox{meinblue}{meingrey}{%
+		\parbox{0.85\textwidth}{%
+			\textbf{Hinweis:}\\%
+			#1
+		}
+	}
+\end{quote}
+}
+
+% farbige Infobox 2
+% Anwendung:
+% \mybox{Text}
+\newcommand{\mybox}[1]{%
+  \setbox0=\hbox{#1}%
+  \setlength{\@tempdima}{\dimexpr\wd0+13pt}%
+  \begin{tcolorbox}[colframe=meinblue,boxrule=0.5pt,arc=4pt,
+      left=6pt,right=6pt,top=6pt,bottom=6pt,boxsep=0pt,width=0.95\textwidth]
+    #1
+  \end{tcolorbox}
+}
+
+% farbige Listenbox
+% Anwendung:
+%\myListenBox {
+%	\item Listenpunkt
+%	\item Listenpunkt
+%	\item Listenpunkt
+%}
+\newcommand\myListenBox[1]{%
+	\begin{quote}
+		\fcolorbox{meinblue}{white}{%
+			\parbox{0.85\textwidth}{%
+				% Inhalt
+				\textbf{Liste: }
+				\begin{itemize}[label=$\square$]%checkbox
+					#1
+				\end{itemize}
+			}
+		}
+	\end{quote}
+}
