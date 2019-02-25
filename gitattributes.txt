@@ -1,0 +1,10 @@
+# file ~/.gitattributes
+# Letztes Update: 24-Feb-2019
+
+# Zeilenendenbehandlung für alle Textdateien aktivieren
+* text=auto
+# SVGs als Textdateien und PDFs als Binärdateien behandeln
+*.svg text
+*.pdf binary
+*.x binary
+*.exe binary
