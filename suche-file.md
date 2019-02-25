@@ -21,8 +21,8 @@ Bsp.: c, py, tex, jpg, svg, md, html, pdf
 ## Suche anzahl file die sich innerhalb von 7 Tagen geändert hat
 
 ~~~
-  # suche: SSH.md
-  FILE="SSH.md"
+  # suche: git-befehle.md
+  FILE="git-befehle.md"
   find . -name $FILE -mtime -7 | wc -l 
 ~~~
 

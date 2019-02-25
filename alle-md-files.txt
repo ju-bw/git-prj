@@ -1,0 +1,3 @@
+./git-befehle.md
+./README.md
+./suche-file.md

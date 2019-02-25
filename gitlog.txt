@@ -1,6 +1,12 @@
-*   910bdc0 (HEAD -> master, lokal/master, github/master, backup/master) Merge branch 'work'
+* d0fc348 (HEAD -> master, lokal/master, github/master, backup/master) git kurs
+*   e8d8336 Merge branch 'work'
 |\  
-| * 11b39e6 (lokal/work, backup/work, work) Test unter work
+| * f7e0748 (lokal/work, backup/work, work) work: neu
+* | e2bdc10 gitlog
+* |   910bdc0 Merge branch 'work'
+|\ \  
+| |/  
+| * 11b39e6 Test unter work
 * |   9ea0985 Merge branch 'work'
 |\ \  
 | |/  
@@ -8,9 +14,13 @@
 * | 02050df gitlog.txt
 |/  
 * f7c718d init
-910bdc0 [vor 28 Minuten] (HEAD -> master, lokal/master, github/master, backup/master) Merge branch 'work' [Jan Unger]
-11b39e6 [vor 32 Minuten] (lokal/work, backup/work, work) Test unter work [Jan Unger]
-9ea0985 [vor 35 Minuten] Merge branch 'work' [Jan Unger]
-7d9f41f [vor 35 Minuten] Testaenderung [Jan Unger]
-02050df [vor 38 Minuten] gitlog.txt [Jan Unger]
-f7c718d [vor 41 Minuten] init [Jan Unger]
+d0fc348 [vor 3 Minuten] (HEAD -> master, lokal/master, github/master, backup/master) git kurs [Jan Unger]
+e8d8336 [vor 30 Minuten] Merge branch 'work' [Jan Unger]
+f7e0748 [vor 30 Minuten] (lokal/work, backup/work, work) work: neu [Jan Unger]
+e2bdc10 [vor 32 Minuten] gitlog [Jan Unger]
+910bdc0 [vor 61 Minuten] Merge branch 'work' [Jan Unger]
+11b39e6 [vor 65 Minuten] Test unter work [Jan Unger]
+9ea0985 [vor 67 Minuten] Merge branch 'work' [Jan Unger]
+7d9f41f [vor 68 Minuten] Testaenderung [Jan Unger]
+02050df [vor 71 Minuten] gitlog.txt [Jan Unger]
+f7c718d [vor 74 Minuten] init [Jan Unger]
