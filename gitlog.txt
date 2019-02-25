@@ -1,2 +1,16 @@
-* f7c718d (HEAD -> master, github/master) init
-f7c718d [vor 65 Sekunden] (HEAD -> master, github/master) init [Jan Unger]
+*   910bdc0 (HEAD -> master, lokal/master, github/master, backup/master) Merge branch 'work'
+|\  
+| * 11b39e6 (lokal/work, backup/work, work) Test unter work
+* |   9ea0985 Merge branch 'work'
+|\ \  
+| |/  
+| * 7d9f41f Testaenderung
+* | 02050df gitlog.txt
+|/  
+* f7c718d init
+910bdc0 [vor 28 Minuten] (HEAD -> master, lokal/master, github/master, backup/master) Merge branch 'work' [Jan Unger]
+11b39e6 [vor 32 Minuten] (lokal/work, backup/work, work) Test unter work [Jan Unger]
+9ea0985 [vor 35 Minuten] Merge branch 'work' [Jan Unger]
+7d9f41f [vor 35 Minuten] Testaenderung [Jan Unger]
+02050df [vor 38 Minuten] gitlog.txt [Jan Unger]
+f7c718d [vor 41 Minuten] init [Jan Unger]
