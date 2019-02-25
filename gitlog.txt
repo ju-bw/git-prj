@@ -1,6 +1,2 @@
-* 92fd754 (HEAD -> master, wolf/master) projekt
-* 5b24262 (work) Testaenderung
-* a0f16a0 init
-92fd754 [vor 13 Minuten] (HEAD -> master, wolf/master) projekt [Jan Unger]
-5b24262 [vor 29 Minuten] (work) Testaenderung [Jan Unger]
-a0f16a0 [vor 30 Minuten] init [Jan Unger]
+* f7c718d (HEAD -> master, github/master) init
+f7c718d [vor 65 Sekunden] (HEAD -> master, github/master) init [Jan Unger]
